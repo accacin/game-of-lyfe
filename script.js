@@ -34,7 +34,6 @@ class Game {
   }
 
   toggleGameState() {
-    console.log(this.isPaused)
     this.isPaused = !this.isPaused ? true : false;
   }
 
