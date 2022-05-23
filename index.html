@@ -10,10 +10,23 @@
 
 <body>
   <h1>UNDER CONSTRUCTION</h1>
-  <canvas id="cells" width="500" height="500">
+  <canvas id="cells" width="750" height="400">
     No canvas?!
   </canvas>
-  <script src="script.js"></script>
+  <button id="btn">Click Me</button>
 </body>
+
+<script src="script.js"></script>
+<script>
+  window.onload = () => {
+    const game = new Game('cells');
+
+    document.querySelector("#btn").addEventListener("click", () => {
+      game.toggleGameState();
+      game.run();
+    })
+  }
+
+</script>
 
 </html>
